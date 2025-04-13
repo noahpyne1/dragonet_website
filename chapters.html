@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter-by-Chapter - The Dragonet Prophecy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .chapter-full {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--card-shadow);
+        }
+        
+        .chapter-full h3 {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .chapter-navigation {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0;
+        }
+        
+        .chapter-navigation a {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .chapter-navigation a:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: var(--primary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            z-index: 99;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+        
+        .chapter-list {
+            margin-bottom: 2rem;
+        }
+        
+        .chapter-list a {
+            display: block;
+            padding: 0.75rem 1rem;
+            margin-bottom: 0.5rem;
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--card-shadow);
+            transition: all 0.3s ease;
+        }
+        
+        .chapter-list a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            color: var(--primary-color);
+        }
+        
+        @media (max-width: 768px) {
+            .back-to-top {
+                width: 40px;
+                height: 40px;
+                bottom: 1rem;
+                right: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>The Dragonet Prophecy</h1>
+            <h2>Wings of Fire Book 1</h2>
+        </div>
+    </header>
+
+    <nav id="main-nav">
+        <div class="container">
+            <button id="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#summary">Summary</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="setting.html">World & Setting</a></li>
+                <li><a href="themes.html">Themes & Messages</a></li>
+                <li><a href="chapters.html">Chapter-by-Chapter</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section>
+                <h2>Chapter-by-Chapter Summary</h2>
+                <p>This detailed chapter-by-chapter summary covers every aspect of "The Dragonet Prophecy," allowing readers to understand the complete story, character development, and plot progression throughout the book.</p>
+                
+                <div class="chapter-list" id="quick-nav">
+                    <h3>Quick Navigation</h3>
+                    <div class="row">
+                        <a href="#prologue" id="prologue">Prologue</a>
+                        <a href="#chapter1" id="chapter1">Chapter 1</a>
+                        <a href="#chapter2" id="chapter2">Chapter 2</a>
+                        <a href="#chapter3" id="chapter3">Chapter 3</a>
+                        <a href="#chapter4" id="chapter4">Chapter 4</a>
+                        <a href="#chapter5" id="chapter5">Chapter 5</a>
+                        <a href="#chapter6" id="chapter6">Chapter 6</a>
+                        <a href="#chapter7" id="chapter7">Chapter 7</a>
+                        <a href="#chapter8" id="chapter8">Chapter 8</a>
+                        <a href="#chapter9" id="chapter9">Chapter 9</a>
+                        <a href="#chapter10" id="chapter10">Chapter 10</a>
+                        <a href="#chapter11" id="chapter11">Chapter 11</a>
+                        <a href="#chapter12" id="chapter12">Chapter 12</a>
+                        <a href="#chapter13" id="chapter13">Chapter 13</a>
+                        <a href="#chapter14" id="chapter14">Chapter 14</a>
+                        <a href="#chapter15" id="chapter15">Chapter 15</a>
+                        <a href="#chapter16" id="chapter16">Chapter 16</a>
+                        <a href="#chapter17" id="chapter17">Chapter 17</a>
+                        <a href="#chapter18" id="chapter18">Chapter 18</a>
+                        <a href="#chapter19" id="chapter19">Chapter 19</a>
+                        <a href="#chapter20" id="chapter20">Chapter 20</a>
+                        <a href="#chapter21" id="chapter21">Chapter 21</a>
+                        <a href="#chapter22" id="chapter22">Chapter 22</a>
+                        <a href="#chapter23" id="chapter23">Chapter 23</a>
+                        <a href="#chapter24" id="chapter24">Chapter 24</a>
+                        <a href="#chapter25" id="chapter25">Chapter 25</a>
+                        <a href="#chapter26" id="chapter26">Chapter 26</a>
+                        <a href="#chapter27" id="chapter27">Chapter 27</a>
+                        <a href="#chapter28" id="chapter28">Chapter 28</a>
+                        <a href="#chapter29" id="chapter29">Chapter 29</a>
+                        <a href="#chapter30" id="chapter30">Chapter 30</a>
+                        <a href="#chapter31" id="chapter31">Chapter 31</a>
+                        <a href="#chapter32" id="chapter32">Chapter 32</a>
+                        <a href="#epilogue" id="epilogue">Epilogue</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="prologue-content">
+                    <h3>Prologue</h3>
+                    <p>The prologue begins during the War of SandWing Succession, which started after Queen Oasis of the SandWings was killed by scavengers (humans) who stole treasure from her palace. Her three daughters—Burn, Blister, and Blaze—each claim the throne, dividing the continent into three factions.</p>
+                    <p>The Talons of Peace, a secret organization working to end the war, gather to discuss the Dragonet Prophecy delivered by Morrowseer, a NightWing. The prophecy states that five dragonets born on the brightest night (when all three moons are full) will end the war and choose the next SandWing queen.</p>
+                    <p>Hvitur, an IceWing member of the Talons, attempts to steal a SkyWing egg for the prophecy but is caught and killed by Burn, who also destroys the egg. Meanwhile, Webs, a SeaWing, successfully steals a SeaWing egg from the royal hatchery. Asha, a MudWing, brings a blood-red MudWing egg but dies from battle wounds. Kestrel, a SkyWing, joins them with Hvitur's news of failure. Webs decides to steal a RainWing egg to replace the SkyWing egg, though this substitution isn't part of the prophecy.</p>
+                    <div class="chapter-navigation">
+                        <a href="#quick-nav">Back to Navigation</a>
+                        <a href="#chapter1-content">Next: Chapter 1</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter1-content">
+                    <h3>Chapter 1</h3>
+                    <p>Six years later, the five dragonets—Clay (MudWing), Tsunami (SeaWing), Glory (RainWing), Starflight (NightWing), and Sunny (SandWing)—live hidden in a cave under the Claws of the Clouds Mountains. They are raised by three guardians: Kestrel, Webs, and Dune.</p>
+                    <p>The chapter opens with Clay, a MudWing, attempting to escape through a river that leads out of the cave. He gets stuck in a narrow tunnel and is rescued by Tsunami, who is angry that he tried to escape without her. Clay explains he wasn't trying to escape but was following his instincts, feeling something calling him.</p>
+                    <p>When they return to the cave, they face punishment from Kestrel, who is particularly harsh with Clay. During battle training, Kestrel forces Clay to fight Tsunami, criticizing his peaceful nature and reluctance to hurt his friend. The guardians constantly remind the dragonets of their duty to fulfill the prophecy and end the war.</p>
+                    <div class="chapter-navigation">
+                        <a href="#prologue-content">Previous: Prologue</a>
+                        <a href="#chapter2-content">Next: Chapter 2</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter2-content">
+                    <h3>Chapter 2</h3>
+                    <p>The dragonets discuss their situation and their desire for freedom. They talk about the prophecy and their role in ending the war. Clay feels particularly protective of his friends, especially Sunny, who is smaller than the others and often picked on by the guardians for not being a "proper" SandWing (she lacks a venomous tail barb and has golden scales instead of pale yellow).</p>
+                    <p>Glory, the RainWing who replaced the SkyWing in the prophecy, is treated poorly by the guardians, especially Kestrel, who considers her useless and unworthy. The dragonets, however, defend Glory and consider her one of them.</p>
+                    <p>Starflight, the NightWing, shares his extensive knowledge about the war and the three SandWing sisters vying for the throne. Tsunami expresses her desire to escape and see the world, particularly the ocean, which she's never experienced despite being a SeaWing.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter1-content">Previous: Chapter 1</a>
+                        <a href="#chapter3-content">Next: Chapter 3</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter3-content">
+                    <h3>Chapter 3</h3>
+                    <p>Morrowseer, the NightWing who delivered the prophecy, visits the cave to inspect the dragonets' progress. The guardians are nervous about his arrival, knowing he has the authority to decide if they're raising the dragonets properly.</p>
+                    <p>During his inspection, Morrowseer is visibly displeased with Glory, confirming the guardians' concerns about substituting a RainWing for the SkyWing in the prophecy. He takes particular interest in Starflight, the NightWing dragonet, giving him special attention and instruction.</p>
+                    <p>After Morrowseer leaves to confer with the guardians, the dragonets overhear a disturbing conversation: Morrowseer and the guardians decide that Glory must be killed, as a RainWing cannot be allowed to fulfill the prophecy. Kestrel is instructed to kill Glory the next day.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter2-content">Previous: Chapter 2</a>
+                        <a href="#chapter4-content">Next: Chapter 4</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter4-content">
+                    <h3>Chapter 4</h3>
+                    <p>Horrified by the plan to kill Glory, Clay and Tsunami decide they must escape with all five dragonets that night. They discover the river Clay got stuck in earlier actually does lead outside, but they need to find a way for all of them to get through safely.</p>
+                    <p>Clay volunteers to go first and find a way out. He successfully navigates the underwater tunnel and emerges in a forest outside. However, before he can return to help the others, he encounters Scarlet, the queen of the SkyWings, who is hunting near the mountains.</p>
+                    <p>Clay hides, but he's spotted by a strange SkyWing dragonet with unusually bright scales. This is Peril, who has firescales—her scales are so hot they burn anything she touches. Queen Scarlet is using Peril as her champion in arena fights.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter3-content">Previous: Chapter 3</a>
+                        <a href="#chapter5-content">Next: Chapter 5</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter5-content">
+                    <h3>Chapter 5</h3>
+                    <p>Clay learns that Peril is Queen Scarlet's champion in the SkyWing arena, where prisoners fight to the death for the queen's entertainment. Peril's firescales make her nearly invincible in combat, as her touch burns other dragons. Despite her deadly abilities, Clay finds Peril lonely and somewhat naive.</p>
+                    <p>When Queen Scarlet approaches, Clay flees back to the river tunnel. He returns to the cave and warns the others about the SkyWings outside. They realize they must leave immediately before they're discovered.</p>
+                    <p>The dragonets put together a plan to escape through the river tunnel. Clay and Tsunami help the others through, with Clay discovering he can hold his breath for an unusually long time (a MudWing trait). As they're escaping, they're confronted by Kestrel, but they manage to overpower her and flee into the forest.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter4-content">Previous: Chapter 4</a>
+                        <a href="#chapter6-content">Next: Chapter 6</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter6-content">
+                    <h3>Chapter 6</h3>
+                    <p>Free for the first time, the dragonets experience the outside world with wonder and trepidation. They decide to head toward the Kingdom of the Sea, hoping to find Tsunami's family and perhaps allies against the SkyWings who will surely be hunting them.</p>
+                    <p>Their journey is cut short when they're spotted by SkyWing soldiers. In the ensuing chase, Sunny and Starflight are captured. Clay, Tsunami, and Glory manage to escape temporarily, but they're unwilling to abandon their friends.</p>
+                    <p>They devise a plan to rescue Sunny and Starflight from the SkyWing palace. However, their rescue attempt fails when they're all captured by Queen Scarlet's forces. The queen is delighted to have caught the dragonets of the prophecy and plans to use them in her arena.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter5-content">Previous: Chapter 5</a>
+                        <a href="#chapter7-content">Next: Chapter 7</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter7-content">
+                    <h3>Chapter 7</h3>
+                    <p>The dragonets are taken to Queen Scarlet's palace in the Sky Kingdom. They're separated and placed in different prison conditions. Clay, Tsunami, and Starflight are chained to stone spires in the prison area, exposed to the elements. Glory is treated as a piece of art due to her color-changing scales and is forced to change colors for the queen's amusement. Sunny is kept in the palace as a curiosity.</p>
+                    <p>Clay meets other prisoners, including Horizon, a SandWing who tells him about the arena fights. He also encounters Peril again, who visits him secretly. She's intrigued by Clay because he's the first dragon who hasn't feared or hated her for her firescales.</p>
+                    <p>Queen Scarlet announces that the dragonets will fight in the arena like her other prisoners. Clay is horrified at the prospect of fighting to the death, especially if he might have to face his friends.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter6-content">Previous: Chapter 6</a>
+                        <a href="#chapter8-content">Next: Chapter 8</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter8-content">
+                    <h3>Chapter 8</h3>
+                    <p>Clay is forced to fight in the arena against Fjord, an IceWing prisoner. IceWings are natural enemies of MudWings, and Fjord is a seasoned fighter. During the battle, Clay tries to reason with Fjord and avoid fighting, but Fjord is determined to kill him to earn his freedom.</p>
+                    <p>As Clay is about to be killed by Fjord's frostbreath, Glory, who is chained nearby as the queen's "art," secretly spits venom into Fjord's eyes, killing him instantly. No one except Clay realizes what happened, and Queen Scarlet is puzzled by Fjord's sudden death.</p>
+                    <p>After the fight, Peril visits Clay again. She explains that she's the only SkyWing born with too much fire (firescales), which makes her touch deadly. Her twin brother had too little fire and was killed at birth. Peril's mother tried to escape with her, but Queen Scarlet caught them and forced Peril's mother to kill herself in the arena.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter7-content">Previous: Chapter 7</a>
+                        <a href="#chapter9-content">Next: Chapter 9</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter9-content">
+                    <h3>Chapter 9</h3>
+                    <p>Clay learns more about Peril's life in the palace. Despite being feared by everyone, she's loyal to Queen Scarlet, who raised her after her mother's death. Peril believes Scarlet cares for her, though Clay begins to suspect the queen is merely using Peril for her deadly abilities.</p>
+                    <p>Peril helps Clay by bringing him food and treating his wounds. She also tells him about the other prisoners, including a SeaWing queen who has been imprisoned for years. Clay realizes this might be Tsunami's mother, Queen Coral.</p>
+                    <p>Meanwhile, Tsunami is forced to fight in the arena. Being a skilled fighter, she survives her battles but is distressed by having to kill other dragons. She also discovers that one of the prisoners is Gill, the former commander of the SeaWing army and possibly her father, though he's been driven mad by dehydration.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter8-content">Previous: Chapter 8</a>
+                        <a href="#chapter10-content">Next: Chapter 10</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter10-content">
+                    <h3>Chapter 10</h3>
+                    <p>Queen Scarlet announces a special occasion: Burn, one of the SandWing sisters fighting for the throne, is visiting the palace. Scarlet plans to give the dragonets to Burn as a gift, knowing Burn will kill them to prevent the prophecy from being fulfilled.</p>
+                    <p>Clay is taken to fight another arena battle, this time against Tsunami. Both refuse to fight each other, angering Queen Scarlet. As punishment, she forces them to fight scavengers (humans) instead. During the fight, Clay and Tsunami notice that one of the scavengers is wearing Queen Oasis's jewelry, suggesting this might be one of the scavengers who killed the SandWing queen and started the war.</p>
+                    <p>After the arena fight, Peril helps Clay meet with the other dragonets in secret. They share information and plan an escape before Burn arrives. Starflight reveals that RainWings can spit venom, a fact that even Glory didn't know about her own tribe.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter9-content">Previous: Chapter 9</a>
+                        <a href="#chapter11-content">Next: Chapter 11</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter11-content">
+                    <h3>Chapter 11</h3>
+                    <p>Burn arrives at the palace, and Queen Scarlet shows off the dragonets. Burn is particularly interested in Sunny, whose unusual golden scales and lack of a venomous tail barb make her different from typical SandWings. Burn, who collects unusual specimens, wants to kill Sunny and add her to her collection.</p>
+                    <p>Clay is forced to fight in the arena again, this time against Peril. However, Queen Scarlet makes it a special occasion by allowing Clay to use his wings and offering him freedom if he wins (though no one has ever defeated Peril). During the fight, Clay discovers that he's immune to Peril's firescales. They realize he hatched from a blood-red egg, giving MudWings like him special fire resistance.</p>
+                    <p>The fight is interrupted when Tsunami causes a disturbance, having freed herself from her chains. In the confusion, Peril helps Clay escape, and they free the other dragonets. However, they're recaptured when Peril betrays them, still loyal to Queen Scarlet.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter10-content">Previous: Chapter 10</a>
+                        <a href="#chapter12-content">Next: Chapter 12</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter12-content">
+                    <h3>Chapter 12</h3>
+                    <p>Queen Scarlet decides to pit Tsunami against a mad SeaWing prisoner who turns out to be Gill, the former commander of the SeaWing army. Dehydrated and driven insane, Gill doesn't recognize Tsunami. In the arena, Tsunami is forced to kill him in self-defense, only learning afterward that he might have been her father.</p>
+                    <p>Morrowseer suddenly appears with a group of NightWings. He kills several SkyWing guards and takes Starflight away, claiming NightWings aren't subject to SkyWing law. The other dragonets are left behind, devastated by the loss of Starflight and unsure if they'll ever see him again.</p>
+                    <p>Peril visits Clay again, conflicted about her loyalty to Queen Scarlet versus her growing feelings for Clay. She reveals that Queen Scarlet has been lying to her all her life, including about her mother's death. Peril decides to help the dragonets escape.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter11-content">Previous: Chapter 11</a>
+                        <a href="#chapter13-content">Next: Chapter 13</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter13-content">
+                    <h3>Chapter 13</h3>
+                    <p>Peril brings Clay to Queen Scarlet's private arena viewing box, where he finds a strange black rock. Peril explains it's a "dreamvisitor," a stone that allows dragons to enter others' dreams. Clay uses it to communicate with Starflight, who reveals he's safe with the NightWings but worried about the others.</p>
+                    <p>Burn is scheduled to leave with the dragonets the next day. Knowing they'll be killed, Peril agrees to help them escape during the next arena fight. She gives Clay a mysterious wire that she claims will help free Glory from her chain.</p>
+                    <p>The next day, Clay is scheduled to fight Peril again. Before the fight, he uses the wire on Glory's chain, but nothing happens. Feeling betrayed by Peril, Clay enters the arena, prepared to die fighting.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter12-content">Previous: Chapter 12</a>
+                        <a href="#chapter14-content">Next: Chapter 14</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter14-content">
+                    <h3>Chapter 14</h3>
+                    <p>As Clay enters the arena to face Peril again, chaos erupts. The seemingly useless wire Peril gave him actually melted Glory's chain over time, allowing her to escape. Glory uses her camouflage abilities to disappear and begins attacking guards.</p>
+                    <p>Simultaneously, Tsunami breaks free again, and Sunny and Starflight (who has returned with Morrowseer) join the fight. Peril helps Clay by burning through his chains. The dragonets battle Queen Scarlet's forces, with Clay protecting his friends.</p>
+                    <p>During the fight, Glory sprays her venom directly at Queen Scarlet's face, severely injuring the SkyWing queen. In the ensuing chaos, the dragonets and Peril escape from the palace. Burn, furious at losing the dragonets, swears to hunt them down.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter13-content">Previous: Chapter 13</a>
+                        <a href="#chapter15-content">Next: Chapter 15</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter15-content">
+                    <h3>Chapter 15</h3>
+                    <p>The dragonets, along with Peril, escape into the mountains. They discuss where to go next, with Tsunami still wanting to find the Kingdom of the Sea and her family. Starflight shares what he learned from the NightWings, though he seems strangely reluctant to talk about his time with them.</p>
+                    <p>Peril is uncertain about her future, torn between her new friendship with Clay and her life at the palace. Though Clay is immune to her firescales, the others can't touch her without being burned. Clay suggests she come with them, but the other dragonets are wary of trusting her.</p>
+                    <p>Their discussion is interrupted when they spot SkyWing soldiers searching for them. The dragonets realize they need to keep moving to stay ahead of both Queen Scarlet's forces and Burn's hunters.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter14-content">Previous: Chapter 14</a>
+                        <a href="#chapter16-content">Next: Chapter 16</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter16-content">
+                    <h3>Chapter 16</h3>
+                    <p>The dragonets decide to head toward the Kingdom of the Sea, hoping to find safety with Tsunami's family. As they travel, they discuss the prophecy and their role in ending the war. Starflight suggests they should choose Blister as the SandWing queen, based on what the NightWings told him, but the others are skeptical.</p>
+                    <p>They encounter a patrol of SandWings from Burn's army. Peril helps them fight off the soldiers, proving her loyalty to the dragonets. However, she decides not to continue with them, feeling she doesn't belong and needs to find her own path. She and Clay share a heartfelt goodbye.</p>
+                    <p>The dragonets continue their journey toward the sea, with Tsunami growing increasingly excited about finally seeing her homeland and meeting her family.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter15-content">Previous: Chapter 15</a>
+                        <a href="#chapter17-content">Next: Chapter 17</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter17-content">
+                    <h3>Chapter 17</h3>
+                    <p>The dragonets reach the edge of the Kingdom of the Sea. Tsunami is overjoyed to finally see the ocean, diving in and demonstrating her natural SeaWing abilities that she never got to use in the cave. She teaches the others basic swimming techniques, though Clay and Sunny struggle in the water.</p>
+                    <p>As they rest on a beach, they're discovered by a SeaWing patrol. The patrol recognizes Tsunami's royal markings and escorts them to the Summer Palace, a hidden SeaWing stronghold. The palace is concealed beneath a canopy of trees on an island, accessible only through underwater tunnels.</p>
+                    <p>Tsunami meets her mother, Queen Coral, who is overjoyed to have her missing daughter back. However, the reunion is complicated by the presence of Tsunami's sister, Anemone, who is chained to the queen at all times for protection. Queen Coral explains that someone has been killing her female heirs, and Tsunami was the only one who escaped because Webs stole her egg.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter16-content">Previous: Chapter 16</a>
+                        <a href="#chapter18-content">Next: Chapter 18</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter18-content">
+                    <h3>Chapter 18</h3>
+                    <p>Tsunami learns about SeaWing society and her royal heritage. Queen Coral shows her the royal hatchery where SeaWing eggs are kept. Tsunami discovers another of her mother's eggs is about to hatch and vows to protect it from whoever has been killing the royal heirs.</p>
+                    <p>The dragonets meet Blister, the SandWing sister who is allied with the SeaWings. Blister is cunning and manipulative, immediately recognizing the dragonets from the prophecy and trying to convince them to choose her as the SandWing queen.</p>
+                    <p>Starflight becomes increasingly nervous around Blister, and Tsunami begins to suspect that the NightWings are secretly working with Blister. She also grows concerned about her friends' safety in the Summer Palace, especially when Queen Coral shows little interest in the non-SeaWing dragonets.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter17-content">Previous: Chapter 17</a>
+                        <a href="#chapter19-content">Next: Chapter 19</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter19-content">
+                    <h3>Chapter 19</h3>
+                    <p>Tsunami spends the night guarding her mother's egg in the royal hatchery. She discovers the assassin is a statue in the hatchery—Orca, a deceased daughter of Queen Coral who was an animus dragon (able to enchant objects). Before dying, Orca enchanted the statue to kill all female heirs to prevent anyone from challenging her for the throne.</p>
+                    <p>The statue attacks Tsunami, who fights it off with help from Anemone, who reveals she too is an animus. They destroy the statue, saving the egg, which hatches into Tsunami's new sister, Auklet.</p>
+                    <p>Meanwhile, Clay and the others grow increasingly uncomfortable in the Summer Palace. They discover that Blister plans to imprison them after they choose her as queen. They also learn that Queen Coral has imprisoned Webs, who fled to the Kingdom of the Sea seeking refuge after the dragonets escaped.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter18-content">Previous: Chapter 18</a>
+                        <a href="#chapter20-content">Next: Chapter 20</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter20-content">
+                    <h3>Chapter 20</h3>
+                    <p>Tsunami confronts her mother about Webs' imprisonment and the treatment of her friends. Queen Coral is dismissive, focused only on her SeaWing subjects and her newly hatched daughter. Tsunami realizes that despite finding her family, her true loyalty lies with the dragonets who were raised with her.</p>
+                    <p>The dragonets decide they must leave the Summer Palace, especially after learning that Blister intends to imprison them. They plan to rescue Webs before departing, as they feel responsible for his current situation.</p>
+                    <p>As they prepare to leave, they're confronted by Blister, who tries to convince them to stay and support her claim to the SandWing throne. The dragonets refuse, and Blister threatens them, revealing her dangerous and manipulative nature.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter19-content">Previous: Chapter 19</a>
+                        <a href="#chapter21-content">Next: Chapter 21</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter21-content">
+                    <h3>Chapter 21</h3>
+                    <p>The dragonets attempt to rescue Webs from the SeaWing prison. They're caught by Queen Coral, who is furious at Tsunami's betrayal. Tsunami tries to explain their actions, but her mother refuses to listen.</p>
+                    <p>During the confrontation, the Summer Palace is suddenly attacked by SkyWings and MudWings from Burn's alliance. The attackers drop burning logs onto the palace, setting fire to the canopy and structures. The dragonets realize that someone must have revealed the secret location of the Summer Palace to Burn's forces.</p>
+                    <p>In the chaos of the attack, the dragonets manage to free Webs and escape from the burning palace. They witness the destruction of the Summer Palace and the deaths of many SeaWings, leaving Tsunami devastated by the loss of her newfound home.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter20-content">Previous: Chapter 20</a>
+                        <a href="#chapter22-content">Next: Chapter 22</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter22-content">
+                    <h3>Chapter 22</h3>
+                    <p>The dragonets, along with Webs, flee from the burning Summer Palace. They realize that Crocodile, a MudWing who had infiltrated the Talons of Peace, must have been a spy for Burn who revealed the palace's location.</p>
+                    <p>Webs is severely injured during their escape. The dragonets decide to seek help from the rainforest, hoping the RainWings might have healers who can save him. They also hope to learn more about Glory's tribe, which none of them know much about.</p>
+                    <p>As they travel, they discuss the three SandWing sisters and which one they should choose as queen. They're increasingly uncertain about the prophecy and their role in ending the war, especially after seeing the destruction of the Summer Palace.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter21-content">Previous: Chapter 21</a>
+                        <a href="#chapter23-content">Next: Chapter 23</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter23-content">
+                    <h3>Chapter 23</h3>
+                    <p>The dragonets reach the rainforest and are immediately struck by its beauty and abundance. Glory is particularly affected, experiencing a sense of belonging she's never felt before. They encounter a group of RainWings, who are friendly but seem oddly unconcerned about strangers in their territory.</p>
+                    <p>The RainWings take Webs to their healers, who use special plants to treat his wounds. The dragonets learn that RainWing society is very different from other dragon tribes—they have no formal leadership structure, don't engage in warfare, and spend much of their time sunning themselves and playing games.</p>
+                    <p>Glory is both fascinated and frustrated by her tribe's laid-back attitude. She discovers that several RainWings have gone missing recently, but the tribe hasn't organized any search parties or shown much concern about the disappearances.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter22-content">Previous: Chapter 22</a>
+                        <a href="#chapter24-content">Next: Chapter 24</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter24-content">
+                    <h3>Chapter 24</h3>
+                    <p>Glory decides to investigate the missing RainWings herself. She learns that the tribe is governed by a rotation of "queens" who take turns leading for a month at a time, though none of them take their responsibilities very seriously. The current acting queen, Magnificent, is dismissive of Glory's concerns about the missing dragons.</p>
+                    <p>Determined to find answers, Glory organizes a search party with the help of a RainWing named Mangrove, whose partner Orchid is among the missing. They discover evidence that the missing RainWings were not simply wandering off but were being captured by something or someone.</p>
+                    <p>Meanwhile, the other dragonets explore the rainforest and learn more about RainWing culture. Sunny and Clay enjoy the peaceful environment, while Tsunami finds the RainWings' lack of discipline frustrating. Starflight becomes increasingly anxious, especially when Glory mentions the possibility of NightWings being involved in the disappearances.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter23-content">Previous: Chapter 23</a>
+                        <a href="#chapter25-content">Next: Chapter 25</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter25-content">
+                    <h3>Chapter 25</h3>
+                    <p>Glory continues her investigation into the missing RainWings. Using her camouflage abilities, she follows a patrol of mysterious dragons who turn out to be NightWings. She discovers they're using a secret tunnel to enter the rainforest and capture RainWings.</p>
+                    <p>Glory is nearly captured herself but manages to escape. She returns to the other dragonets with her discovery, confronting Starflight about the NightWings' involvement. Starflight reluctantly admits that the NightWings have been capturing RainWings for experiments, trying to understand their venom and camouflage abilities.</p>
+                    <p>The dragonets decide they must rescue the captured RainWings. Glory challenges the RainWing queens to take action, but they refuse, preferring to maintain their peaceful lifestyle rather than risk conflict. Frustrated by their inaction, Glory decides to compete in the RainWing royal challenge, a series of competitions to determine the next queen.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter24-content">Previous: Chapter 24</a>
+                        <a href="#chapter26-content">Next: Chapter 26</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter26-content">
+                    <h3>Chapter 26</h3>
+                    <p>Glory competes in the royal challenge against the current RainWing queens. The challenge consists of several competitions testing different skills, including camouflage, fruit gathering, and venom-spitting accuracy. Despite the other queens' attempts to sabotage her, Glory performs exceptionally well.</p>
+                    <p>During the final competition, a test of tribal knowledge, Glory exposes the queens' negligence regarding the missing RainWings. She wins the challenge and becomes the new queen of the RainWings, promising to find and rescue their missing tribe members.</p>
+                    <p>As queen, Glory organizes a rescue mission to the NightWing island. She selects a team including the other dragonets and several skilled RainWings. They use the secret tunnel to enter the NightWings' volcanic island home, where they discover the captured RainWings being held in terrible conditions.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter25-content">Previous: Chapter 25</a>
+                        <a href="#chapter27-content">Next: Chapter 27</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter27-content">
+                    <h3>Chapter 27</h3>
+                    <p>On the NightWing island, the rescue team frees the captured RainWings. They discover the terrible conditions the NightWings live in—a barren, ash-covered island with toxic air and little food. The volcano is becoming increasingly unstable, threatening to erupt.</p>
+                    <p>They confront Morrowseer, who reveals a shocking truth: the Dragonet Prophecy is fake. He and Queen Battlewinner (the NightWing queen) created it to manipulate the other tribes and eventually take over the rainforest. The NightWings' plan was to use the dragonets to choose Blister as the SandWing queen, as they had a secret alliance with her.</p>
+                    <p>The dragonets are devastated by this revelation, realizing their entire lives have been based on a lie. However, they also recognize that even if the prophecy is fake, they still have the power to help end the war and save the dragons of Pyrrhia.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter26-content">Previous: Chapter 26</a>
+                        <a href="#chapter28-content">Next: Chapter 28</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter28-content">
+                    <h3>Chapter 28</h3>
+                    <p>The volcano on the NightWing island begins to erupt, forcing an evacuation. Glory offers the NightWings sanctuary in the rainforest, but only if they accept her as their queen and promise to live peacefully with the RainWings. Most NightWings agree, desperate to escape the eruption.</p>
+                    <p>During the evacuation, they discover Queen Battlewinner in a hidden chamber. She's been living in a cauldron of lava because she was fatally injured by IceWing frostbreath years ago. The lava keeps her alive by counteracting the freezing effect. When she tries to leave the cauldron to stop the evacuation, the opposing forces of ice and fire kill her.</p>
+                    <p>Morrowseer refuses to accept Glory's terms and stays behind on the island. The dragonets and the NightWings who accepted Glory's rule escape through the tunnel just as the volcano violently erupts, presumably killing Morrowseer and any dragons who remained.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter27-content">Previous: Chapter 27</a>
+                        <a href="#chapter29-content">Next: Chapter 29</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter29-content">
+                    <h3>Chapter 29</h3>
+                    <p>Back in the rainforest, Glory establishes herself as queen of both the RainWings and the NightWings. She sets up rules for the NightWings' integration into rainforest society and appoints dragons from both tribes to help govern.</p>
+                    <p>The dragonets discuss what to do next. Despite learning the prophecy is fake, they still feel responsible for helping end the war. They decide to continue with their mission to choose a SandWing queen, but on their own terms rather than following the NightWings' manipulation.</p>
+                    <p>Sunny suggests they try to find a peaceful solution that doesn't involve supporting any of the three sisters. She proposes they look for the Eye of Onyx, a legendary SandWing treasure that supposedly determines the rightful queen.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter28-content">Previous: Chapter 28</a>
+                        <a href="#chapter30-content">Next: Chapter 30</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter30-content">
+                    <h3>Chapter 30</h3>
+                    <p>The dragonets prepare to leave the rainforest to continue their mission. Glory decides to stay behind to lead her new kingdoms, but supports the others in their quest to end the war. The RainWings and NightWings begin to work together under Glory's leadership, though tensions remain.</p>
+                    <p>Before they leave, the dragonets discuss the prophecy and their role in it. They realize that even though the prophecy was fabricated, they've still managed to fulfill parts of it—they've brought "wings of night" (the NightWings) to the rainforest and helped "darkness rise to bring the light" by exposing the NightWings' deception.</p>
+                    <p>Clay, Tsunami, Starflight, and Sunny say goodbye to Glory and set off toward the Kingdom of Sand, determined to find a way to end the war on their own terms. They're no longer following a false prophecy but acting on their own convictions.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter29-content">Previous: Chapter 29</a>
+                        <a href="#chapter31-content">Next: Chapter 31</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter31-content">
+                    <h3>Chapter 31</h3>
+                    <p>As the dragonets travel toward the Kingdom of Sand, they're intercepted by Blister, who has been tracking them. She tries again to convince them to choose her as queen, using a combination of threats and promises. The dragonets refuse to be manipulated and manage to escape from her.</p>
+                    <p>They continue their journey, discussing possible solutions to the SandWing succession crisis. Starflight suggests they could try to get the three sisters to agree to divide the kingdom, but the others doubt this would work given the sisters' hatred for each other.</p>
+                    <p>They decide their best option is to call a meeting of all three sisters and all the tribes, where they can try to broker a peaceful resolution. They send messages to the tribal leaders and the SandWing sisters, inviting them to a gathering at the Great Rock, a neutral location in the Kingdom of Sand.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter30-content">Previous: Chapter 30</a>
+                        <a href="#chapter32-content">Next: Chapter 32</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="chapter32-content">
+                    <h3>Chapter 32</h3>
+                    <p>The dragonets arrive at the Great Rock, where representatives from all seven dragon tribes and the three SandWing sisters have gathered. The atmosphere is tense, with ancient tribal enemies forced to be in close proximity and the three sisters glaring at each other.</p>
+                    <p>Clay, as the "wings of earth," addresses the gathering, explaining that they want to find a peaceful solution to end the war. He introduces Sunny, who reveals that she's discovered the Eye of Onyx, the ancient SandWing treasure that determines the rightful queen.</p>
+                    <p>The three sisters immediately begin fighting over the Eye of Onyx. In the chaos, Burn is killed by a dragonbite viper hidden in a gift from Blister, and Blister is destroyed when she seizes the Eye of Onyx, which kills any dragon unworthy of being queen. Blaze, the last sister standing, acknowledges she's not fit to rule and supports Thorn, Sunny's mother, as the new SandWing queen.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter31-content">Previous: Chapter 31</a>
+                        <a href="#epilogue-content">Next: Epilogue</a>
+                    </div>
+                </div>
+                
+                <div class="chapter-full" id="epilogue-content">
+                    <h3>Epilogue</h3>
+                    <p>With the war over and Thorn established as the new SandWing queen, peace begins to return to Pyrrhia. The dragonets are hailed as heroes who fulfilled the prophecy, even though they know it was fabricated. They decide not to reveal the truth about the prophecy, feeling it would only cause more confusion and potential conflict.</p>
+                    <p>The dragonets discuss their future plans. Clay wants to find his siblings in the Mud Kingdom. Tsunami plans to return to the Kingdom of the Sea to help rebuild after the destruction of the Summer Palace. Glory is already established as queen of the RainWings and NightWings. Starflight, who was blinded during the NightWing island evacuation, wants to create a library to preserve dragon knowledge. Sunny plans to stay with her mother in the Kingdom of Sand.</p>
+                    <p>Before they separate to pursue their individual paths, the dragonets decide to create a school where dragons from all tribes can learn together in peace. They hope this will help prevent future wars by fostering understanding between the tribes. The book ends with the dragonets looking toward a peaceful future for Pyrrhia, having fulfilled their destiny in their own way despite the prophecy being false.</p>
+                    <div class="chapter-navigation">
+                        <a href="#chapter32-content">Previous: Chapter 32</a>
+                        <a href="#quick-nav">Back to Navigation</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 The Dragonet Prophecy Guide | Wings of Fire Book 1</p>
+            <p>This is a fan-created website for educational purposes. Wings of Fire is written by Tui T. Sutherland and published by Scholastic.</p>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
